@@ -1,0 +1,13 @@
+Practica de VIG de Alberto Maldonado Lopez (46989526)
+
+Uso de la aplicacion
+--> Control+Shift+movimiento del mouse = mueve el objeto o objetos seleccionados
+--> Solo se puede abrir el dialogo de material si hay algun material seleccionado
+--> Con K,L y O se modifica el escalado del objeto o objetos seleccionados (con shift presionado escalado opuesto)
+--> Con J y U se ponen los objetos uno encima de otro (tiene que haber 2 objetos seleccionados)
+--> Con Y se bajan los objetos seleccionados hasta la base
+--> Con SUPR se borran los objetos seleccionados
+
+El resto de funcionalidades sigue las practicas P1,P2 y P3
+
+Funcionalidad extra: Guardar y Cargar una escena 

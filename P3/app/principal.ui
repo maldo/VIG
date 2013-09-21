@@ -1,0 +1,514 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Principal</class>
+ <widget class="QWidget" name="Principal">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>606</width>
+    <height>491</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Principal</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_2">
+   <item row="0" column="0">
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <widget class="GLWidget" name="gLWidget" native="true">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>400</width>
+         <height>400</height>
+        </size>
+       </property>
+       <property name="focusPolicy">
+        <enum>Qt::StrongFocus</enum>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="0" column="1">
+    <layout class="QVBoxLayout" name="verticalLayout_2">
+     <property name="sizeConstraint">
+      <enum>QLayout::SetMinimumSize</enum>
+     </property>
+     <item>
+      <widget class="QPushButton" name="save">
+       <property name="text">
+        <string>Save vig</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="load">
+       <property name="text">
+        <string>Load vig</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Load Object</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QGroupBox" name="RenderBox">
+       <property name="title">
+        <string>Render Mode</string>
+       </property>
+       <layout class="QGridLayout" name="gridLayout">
+        <item row="0" column="0">
+         <layout class="QVBoxLayout" name="verticalLayout">
+          <item>
+           <widget class="QRadioButton" name="Solid">
+            <property name="text">
+             <string>Solid</string>
+            </property>
+            <property name="checked">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="Wireframe">
+            <property name="text">
+             <string>Wireframe</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="InitCamera">
+       <property name="text">
+        <string>&amp;Init camera</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="PlanElev">
+       <property name="text">
+        <string>Plan-Elev</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="Zbuffer">
+       <property name="text">
+        <string>Zbuffer</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="BFC">
+       <property name="text">
+        <string>BFC</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="Luz">
+       <property name="text">
+        <string>Llum</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="Material">
+       <property name="text">
+        <string>Material</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="Luces">
+       <property name="text">
+        <string>Luces</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="verticalSpacer">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>40</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Maximum</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QPushButton" name="Exit">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="text">
+          <string>&amp;Exit</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>GLWidget</class>
+   <extends>QWidget</extends>
+   <header>glwidget.h</header>
+   <container>1</container>
+   <slots>
+    <signal>buttonLoad(bool)</signal>
+    <signal>buttonLlum(bool)</signal>
+    <signal>buttonBackFaceCulling(bool)</signal>
+    <signal>buttonZbuffer(bool)</signal>
+    <signal>buttonMaterial(bool)</signal>
+    <slot>LoadObject()</slot>
+    <slot>setCameraLight(bool)</slot>
+    <slot>LoadCharacter()</slot>
+    <slot>SetSolid()</slot>
+    <slot>SetWireframe()</slot>
+    <slot>PlanElevation()</slot>
+    <slot>ResetCamera()</slot>
+    <slot>NoPlanElevation()</slot>
+    <slot>PlanElevation(bool)</slot>
+    <slot>Lighting(bool)</slot>
+    <slot>BackFaceCulling(bool)</slot>
+    <slot>Zbuffer(bool)</slot>
+    <slot>ChangeMaterial(bool)</slot>
+    <slot>ChangeLuces(bool)</slot>
+    <slot>LoadImagenes()</slot>
+    <slot>Save()</slot>
+    <slot>Load()</slot>
+   </slots>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>Exit</sender>
+   <signal>clicked()</signal>
+   <receiver>Principal</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>579</x>
+     <y>479</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>556</x>
+     <y>306</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>InitCamera</sender>
+   <signal>clicked()</signal>
+   <receiver>gLWidget</receiver>
+   <slot>ResetCamera()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>595</x>
+     <y>229</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>280</x>
+     <y>146</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Solid</sender>
+   <signal>clicked()</signal>
+   <receiver>gLWidget</receiver>
+   <slot>SetSolid()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>585</x>
+     <y>156</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>328</x>
+     <y>81</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Wireframe</sender>
+   <signal>clicked()</signal>
+   <receiver>gLWidget</receiver>
+   <slot>SetWireframe()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>585</x>
+     <y>184</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>326</x>
+     <y>105</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>PlanElev</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>gLWidget</receiver>
+   <slot>PlanElevation(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>595</x>
+     <y>257</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>332</x>
+     <y>225</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>gLWidget</sender>
+   <signal>buttonLlum(bool)</signal>
+   <receiver>Luz</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>333</x>
+     <y>277</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>595</x>
+     <y>341</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Luz</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>gLWidget</receiver>
+   <slot>Lighting(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>595</x>
+     <y>341</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>362</x>
+     <y>304</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>gLWidget</sender>
+   <signal>buttonBackFaceCulling(bool)</signal>
+   <receiver>BFC</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>276</x>
+     <y>346</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>595</x>
+     <y>313</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>gLWidget</sender>
+   <signal>buttonZbuffer(bool)</signal>
+   <receiver>Zbuffer</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>369</x>
+     <y>386</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>595</x>
+     <y>285</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>BFC</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>gLWidget</receiver>
+   <slot>BackFaceCulling(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>595</x>
+     <y>313</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>379</x>
+     <y>245</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Zbuffer</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>gLWidget</receiver>
+   <slot>Zbuffer(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>595</x>
+     <y>285</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>209</x>
+     <y>209</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Material</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>gLWidget</receiver>
+   <slot>ChangeMaterial(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>595</x>
+     <y>369</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>366</x>
+     <y>368</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>gLWidget</sender>
+   <signal>buttonMaterial(bool)</signal>
+   <receiver>Material</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>159</x>
+     <y>386</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>595</x>
+     <y>369</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Luces</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>gLWidget</receiver>
+   <slot>ChangeLuces(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>595</x>
+     <y>397</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>409</x>
+     <y>413</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>gLWidget</receiver>
+   <slot>LoadImagenes()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>595</x>
+     <y>102</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>315</x>
+     <y>60</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>save</sender>
+   <signal>clicked()</signal>
+   <receiver>gLWidget</receiver>
+   <slot>Save()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>509</x>
+     <y>30</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>405</x>
+     <y>28</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>load</sender>
+   <signal>clicked()</signal>
+   <receiver>gLWidget</receiver>
+   <slot>Load()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>472</x>
+     <y>53</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>380</x>
+     <y>52</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

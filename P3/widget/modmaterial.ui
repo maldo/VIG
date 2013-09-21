@@ -1,0 +1,741 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ModMaterial</class>
+ <widget class="QWidget" name="ModMaterial">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>515</width>
+    <height>252</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <layout class="QVBoxLayout" name="verticalLayout_4">
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_14">
+       <item>
+        <widget class="QGroupBox" name="groupBox">
+         <property name="title">
+          <string>Color Ambiente</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout">
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout">
+            <item>
+             <widget class="QLabel" name="label">
+              <property name="text">
+               <string>R:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QSlider" name="AR">
+              <property name="maximum">
+               <number>100</number>
+              </property>
+              <property name="singleStep">
+               <number>1</number>
+              </property>
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_2">
+            <item>
+             <widget class="QLabel" name="label_2">
+              <property name="text">
+               <string>G</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QSlider" name="AG">
+              <property name="maximum">
+               <number>100</number>
+              </property>
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_3">
+            <item>
+             <widget class="QLabel" name="label_3">
+              <property name="text">
+               <string>B</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QSlider" name="AB">
+              <property name="maximum">
+               <number>100</number>
+              </property>
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_10">
+            <item>
+             <widget class="QLabel" name="label_4">
+              <property name="text">
+               <string>RGB:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_5">
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_2">
+         <property name="title">
+          <string>Color Difuso</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_2">
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_4">
+            <item>
+             <widget class="QLabel" name="label_15">
+              <property name="text">
+               <string>R:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QSlider" name="DR">
+              <property name="maximum">
+               <number>100</number>
+              </property>
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_5">
+            <item>
+             <widget class="QLabel" name="label_13">
+              <property name="text">
+               <string>G</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QSlider" name="DG">
+              <property name="maximum">
+               <number>100</number>
+              </property>
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_6">
+            <item>
+             <widget class="QLabel" name="label_8">
+              <property name="text">
+               <string>B</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QSlider" name="DB">
+              <property name="maximum">
+               <number>100</number>
+              </property>
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_11">
+            <item>
+             <widget class="QLabel" name="label_14">
+              <property name="text">
+               <string>RGB:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_11">
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_3">
+         <property name="title">
+          <string>Color Especular</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_3">
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_7">
+            <item>
+             <widget class="QLabel" name="label_6">
+              <property name="text">
+               <string>R:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QSlider" name="SR">
+              <property name="maximum">
+               <number>100</number>
+              </property>
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_8">
+            <item>
+             <widget class="QLabel" name="label_7">
+              <property name="text">
+               <string>G</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QSlider" name="SG">
+              <property name="maximum">
+               <number>100</number>
+              </property>
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_9">
+            <item>
+             <widget class="QLabel" name="label_12">
+              <property name="text">
+               <string>B</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QSlider" name="SB">
+              <property name="maximum">
+               <number>100</number>
+              </property>
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_12">
+            <item>
+             <widget class="QLabel" name="label_16">
+              <property name="text">
+               <string>RGB:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_17">
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_13">
+       <item>
+        <widget class="QLabel" name="label_18">
+         <property name="text">
+          <string>Brillo</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QSlider" name="Brillo">
+         <property name="maximum">
+          <number>100</number>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="LabelBrillo">
+         <property name="text">
+          <string>(   )</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>ModMaterial</sender>
+   <signal>setRGBAmbiente(QString)</signal>
+   <receiver>label_5</receiver>
+   <slot>setText(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>123</x>
+     <y>242</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>175</x>
+     <y>164</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ModMaterial</sender>
+   <signal>setRGBDifuso(QString)</signal>
+   <receiver>label_11</receiver>
+   <slot>setText(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>252</x>
+     <y>242</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>409</x>
+     <y>164</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ModMaterial</sender>
+   <signal>setRGBEspecular(QString)</signal>
+   <receiver>label_17</receiver>
+   <slot>setText(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>412</x>
+     <y>242</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>616</x>
+     <y>164</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>AR</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>ModMaterial</receiver>
+   <slot>getkaR(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>78</x>
+     <y>55</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>4</x>
+     <y>50</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>AG</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>ModMaterial</receiver>
+   <slot>getkaG(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>90</x>
+     <y>102</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>4</x>
+     <y>94</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>AB</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>ModMaterial</receiver>
+   <slot>getkaB(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>72</x>
+     <y>139</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1</x>
+     <y>136</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>DR</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>ModMaterial</receiver>
+   <slot>getkdR(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>409</x>
+     <y>63</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>280</x>
+     <y>0</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>DG</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>ModMaterial</receiver>
+   <slot>getkdG(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>405</x>
+     <y>102</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>178</x>
+     <y>0</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>DB</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>ModMaterial</receiver>
+   <slot>getkdB(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>369</x>
+     <y>139</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>299</x>
+     <y>2</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>SR</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>ModMaterial</receiver>
+   <slot>getksR(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>616</x>
+     <y>65</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>485</x>
+     <y>43</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>SG</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>ModMaterial</receiver>
+   <slot>getksG(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>616</x>
+     <y>102</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>497</x>
+     <y>90</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>SB</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>ModMaterial</receiver>
+   <slot>getksB(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>599</x>
+     <y>139</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>503</x>
+     <y>126</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Brillo</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>ModMaterial</receiver>
+   <slot>getBrillo(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>99</x>
+     <y>230</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>0</x>
+     <y>242</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ModMaterial</sender>
+   <signal>setBrillo(QString)</signal>
+   <receiver>LabelBrillo</receiver>
+   <slot>setText(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>361</x>
+     <y>242</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>626</x>
+     <y>233</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ModMaterial</sender>
+   <signal>setSliderBrillo(int)</signal>
+   <receiver>Brillo</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>40</x>
+     <y>236</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>186</x>
+     <y>230</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ModMaterial</sender>
+   <signal>setSliderkaR(int)</signal>
+   <receiver>AR</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>69</x>
+     <y>239</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>64</x>
+     <y>48</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ModMaterial</sender>
+   <signal>setSliderkaG(int)</signal>
+   <receiver>AG</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>116</x>
+     <y>8</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>152</x>
+     <y>102</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ModMaterial</sender>
+   <signal>setSliderkaB(int)</signal>
+   <receiver>AB</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>88</x>
+     <y>8</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>84</x>
+     <y>139</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ModMaterial</sender>
+   <signal>setSliderkdR(int)</signal>
+   <receiver>DR</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>328</x>
+     <y>235</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>409</x>
+     <y>50</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ModMaterial</sender>
+   <signal>setSliderkdG(int)</signal>
+   <receiver>DG</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>390</x>
+     <y>5</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>381</x>
+     <y>102</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ModMaterial</sender>
+   <signal>setSliderkdB(int)</signal>
+   <receiver>DB</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>328</x>
+     <y>237</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>378</x>
+     <y>139</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ModMaterial</sender>
+   <signal>setSliderksR(int)</signal>
+   <receiver>SR</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>527</x>
+     <y>8</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>616</x>
+     <y>54</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ModMaterial</sender>
+   <signal>setSliderksG(int)</signal>
+   <receiver>SG</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>457</x>
+     <y>236</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>616</x>
+     <y>102</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ModMaterial</sender>
+   <signal>setSliderksB(int)</signal>
+   <receiver>SB</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>507</x>
+     <y>234</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>616</x>
+     <y>139</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <signal>setRGBAmbiente(QString)</signal>
+  <signal>setRGBEspecular(QString)</signal>
+  <signal>setRGBDifuso(QString)</signal>
+  <signal>setBrillo(QString)</signal>
+  <signal>setSliderBrillo(int)</signal>
+  <signal>setSliderkaR(int)</signal>
+  <signal>setSliderkaG(int)</signal>
+  <signal>setSliderkaB(int)</signal>
+  <signal>setSliderkdR(int)</signal>
+  <signal>setSliderkdG(int)</signal>
+  <signal>setSliderkdB(int)</signal>
+  <signal>setSliderksR(int)</signal>
+  <signal>setSliderksG(int)</signal>
+  <signal>setSliderksB(int)</signal>
+  <slot>getkaR(int)</slot>
+  <slot>getkaG(int)</slot>
+  <slot>getkaB(int)</slot>
+  <slot>getkdR(int)</slot>
+  <slot>getkdG(int)</slot>
+  <slot>getkdB(int)</slot>
+  <slot>getksR(int)</slot>
+  <slot>getksG(int)</slot>
+  <slot>getksB(int)</slot>
+  <slot>getBrillo(int)</slot>
+ </slots>
+</ui>
